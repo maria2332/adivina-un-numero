@@ -106,3 +106,7 @@ def jugar():
     if not respuestaStartSiONo("Nueva Partida: "):
       print("Hasta la próxima")
       return
+      
+from game_import_jugar
+if__name__=="__main__":
+  jugar()
