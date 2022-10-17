@@ -39,3 +39,34 @@ def decidirNivel():
     else:
       print("Elija un nivel")
       return decidirNivel()
+
+def oportunidades():
+  numIntentos = 0
+  while True:
+    oportunidades = numIntentos + 1
+  if oportunidades <= 5:
+    print("Sigue intentandolo")
+  else:
+    print("Game over")
+  return oportunidades
+
+def puntuaciones():
+  tabla = {}
+  tabla["nombreJugador"] = input("Introduce un nombre: ")
+  tabla["puntuacion"] = puntuacion
+  puntos = 0
+  if oportunidades == 1:
+    puntuacion = puntos + 100
+  elif oportunidades == 2:
+    puntuacion = puntos + 50
+  elif oportunidades == 3:
+    puntuacion = puntos + 25
+  elif oportunidades == 4:
+    puntuacion = puntos + 10
+  elif oportunidades == 5:
+    puntuacion = puntos + 5
+  else:
+    puntuacion = 0
+
+  print (tabla["nombreJugador", "puntos"])
+  return tabla
